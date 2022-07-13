@@ -1,0 +1,103 @@
+#Physician Table:
+INSERT INTO Physician VALUES (1,'Liam Olivia','Intern','12334456');
+INSERT INTO Physician VALUES (2,'Noah Emma','Intern','09898876');
+INSERT INTO Physician VALUES (3,'Oliver Ava','Surgeon','87676654');
+INSERT INTO Physician VALUES (4,'William Sophia','Senior','34545456');
+INSERT INTO Physician VALUES (5,'James Amelia','Chief of Medicine','13534234');
+INSERT INTO Physician VALUES (6,'Benjamin Isabelle','Resident','65465876');
+INSERT INTO Physician VALUES (7,'Henry Evelyn','Senior','45665890');
+
+#Department
+INSERT INTO Department VALUES (1,'Surgery',1);
+INSERT INTO Department VALUES (2,'General Medicine',3);
+INSERT INTO Department VALUES (3,'Psychiatry',7);
+
+#Affiliated
+INSERT INTO AffiliatedWith VALUES(1,1);
+INSERT INTO AffiliatedWith VALUES(2,1);
+INSERT INTO AffiliatedWith VALUES(3,2);
+INSERT INTO AffiliatedWith VALUES(4,1);
+INSERT INTO AffiliatedWith VALUES(5,3);
+INSERT INTO AffiliatedWith VALUES(6,3);
+INSERT INTO AffiliatedWith VALUES(7,3);
+
+#Proc
+INSERT INTO `Procedure` VALUES (1,'Proc A',1000);
+INSERT INTO `Procedure` VALUES (2,'Proc B',100);
+INSERT INTO `Procedure` VALUES (3,'Proc C',10);
+INSERT INTO `Procedure` VALUES (4,'Proc D',1500);
+INSERT INTO `Procedure` VALUES (5,'Proc E',2000);
+INSERT INTO `Procedure` VALUES (6,'Proc F',2500);
+
+#Patient
+INSERT INTO Patient VALUES (0001,00089888,'Sam Smith','12 Gladys Dr','1999-02-03','575-678-0990',123456,3);
+INSERT INTO Patient VALUES (0002,78755674,'Micheael Smith','1234 Trivis Dr','1979-02-03','575-879-0990',123457,3);
+INSERT INTO Patient VALUES (0003,00089808,'Maria Garcia','9870 Home Rd','2000-07-15','575-678-0090',123458,3);
+INSERT INTO Patient VALUES (0004,00089088,'Joshua Hernandez','098 Main Street','1989-02-27','575-678-1234',123459,4);
+INSERT INTO Patient VALUES (0005,00083888,'Henry Jade','12 Area Place','1991-12-02','575-678-1432',123410,5);
+INSERT INTO Patient VALUES (0006,00129888,'Zoellia Kemp','9872 Bright Street','1999-03-03','575-678-4564',123411,6);
+INSERT INTO Patient VALUES (0007,12289888,'Naomi Johnson','076 Boba Dr','2000-05-23','575-678-2645',123412,7);
+INSERT INTO Patient VALUES (0008,43089880,'Kari Johnson','2345 Hello world street','1995-02-16','575-678-0000',123413,7);
+INSERT INTO Patient VALUES (0009,67089878,'David Johns','1123 Cinnamon Dr','1997-11-03','575-678-1230',123414,5);
+INSERT INTO Patient VALUES (0010,67089566,'Julian Kay','12567 Gladys Dr','1980-09-28','575-678-4567',123415,5);
+INSERT INTO Patient VALUES (0011,67789999,'Samuel Sam','12456 Gladys Dr','1994-02-03','575-678-5677',123416,6);
+
+#Nurse
+INSERT INTO Nurse VALUES (1,'Jay Ho','Head Nurse',345670099);
+INSERT INTO Nurse VALUES (2,'Anaa Johnson','Nurse',345671299);
+INSERT INTO Nurse VALUES (3,'Daniel Garcia','Nurse',345345699);
+INSERT INTO Nurse VALUES (4,'Linda McKay','Nurse',345110099);
+INSERT INTO Nurse VALUES (5,'Mark Bueno','Nurse',345220099);
+INSERT INTO Nurse VALUES (6,'Jady Mark','Head Nurse',345330099);
+
+#Medication
+INSERT INTO Medication VALUES (1,'Med A');
+INSERT INTO Medication VALUES (2,'Med B');
+INSERT INTO Medication VALUES (3,'Med C');
+INSERT INTO Medication VALUES (4,'Med D');
+INSERT INTO Medication VALUES (5,'Med E');
+INSERT INTO Medication VALUES (6,'Med F');
+INSERT INTO Medication VALUES (7,'Med G');
+INSERT INTO Medication VALUES (8,'Med H');
+INSERT INTO Medication VALUES (9,'Med I');
+
+#Prescribes
+INSERT INTO Prescribes VALUES (3,1,9,'2021-09-08','2/day');
+INSERT INTO Prescribes VALUES (3,2,7,'2021-12-08','3/day');
+INSERT INTO Prescribes VALUES (3,5,5,'2021-01-14','1/day');
+INSERT INTO Prescribes VALUES (7,7,3,'2021-05-12','4/day');
+INSERT INTO Prescribes VALUES (7,11,1,'2021-01-28','2/day');
+
+#ROOM
+INSERT INTO Room VALUES (1,'Single');
+INSERT INTO Room VALUES (2,'Double');
+
+#Stay
+INSERT INTO Stay VALUES (1,3,1,'2021-04-05','2021-04-20');
+INSERT INTO Stay VALUES (2,1,1,'2021-04-05','2021-08-20');
+INSERT INTO Stay VALUES (3,2,1,'2021-03-05','2021-04-20');
+INSERT INTO Stay VALUES (4,6,2,'2021-03-05','2021-04-19');
+INSERT INTO Stay VALUES (5,7,2,'2021-12-05','2022-01-20');
+INSERT INTO Stay VALUES (6,10,2,'2021-09-05','2021-10-05');
+
+#UNDERGOES
+INSERT INTO Undergoes VALUES (1,2,2,'2021-04-05',3,3);
+INSERT INTO Undergoes VALUES (3,5,1,'2021-04-05',3,4);
+INSERT INTO Undergoes VALUES (6,2,4,'2021-03-05',4,4);
+INSERT INTO Undergoes VALUES (10,4,6,'2021-09-05',4,1);
+INSERT INTO Undergoes VALUES (7,2,5,'2021-12-05',5,1);
+
+#ONCALL
+INSERT INTO Oncall VALUES (1,'2021-01-01','2021-02-01');
+INSERT INTO Oncall VALUES (2,'2021-02-01','2021-03-01');
+INSERT INTO Oncall VALUES (3,'2021-03-01','2021-04-01');
+INSERT INTO Oncall VALUES (4,'2021-04-01','2021-05-01');
+
+#APPOINTMENT
+INSERT INTO Appointment VALUES (1,1,1,1,'2021-09-21 9:00','2021-09-21 9:45');
+INSERT INTO Appointment VALUES (2,2,1,1,'2021-10-09 9:00','2021-10-09 10:00');
+INSERT INTO Appointment VALUES (3,3,1,1,'2021-09-22 13:00','2021-09-22 13:15');
+INSERT INTO Appointment VALUES (4,7,2,2,'2021-09-23 14:00','2021-09-23 14:50');
+INSERT INTO Appointment VALUES (5,8,2,2,'2021-09-23 15:00','2021-09-23 15:45');
+INSERT INTO Appointment VALUES (6,10,4,2,'2021-09-24 15:00','2021-09-24 15:30');
+INSERT INTO Appointment VALUES (7,11,6,7,'2021-09-21 15:00','2021-09-21 16:00');
